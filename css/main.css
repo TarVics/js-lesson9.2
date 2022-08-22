@@ -1,0 +1,71 @@
+.task-header {
+    border-left: 5px solid green;
+    padding-left: 10px;
+    margin-left: 10px;
+    display: block;
+    font-family: sans-serif;
+    white-space: pre-wrap;
+}
+/********************************************************************/
+.layout {
+    min-width: 600px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px dotted black;
+    margin: 10px;
+    font-family: sans-serif;
+    font-size: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.layout > .layout-card {
+    width: 250px;
+}
+
+.layout-card {
+}
+
+.layout-body {
+    padding: 5px;
+    box-sizing: border-box;
+    border: 1px solid gray;
+    box-shadow: 2px 2px 2px lightgray;
+}
+
+.layout-header {
+    padding: 5px;
+    box-sizing: border-box;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    box-shadow: 2px 2px 2px lightgray;
+    background: cornflowerblue;
+    color: white;
+}
+
+.layout-row {
+    display: flex;
+    line-height: 20px;
+}
+
+.layout-caption {
+    width: 40%;
+    text-align: end;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.layout-caption::after {
+    content: ":";
+}
+
+.layout-value {
+    width: 70%;
+    margin-left: 5px;
+    text-align: start;
+    color: #335e96;
+}
