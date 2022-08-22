@@ -66,14 +66,14 @@
             const [ main, ...contents ] = tagCollect();
 
             const mainTag = document.createElement('div');
-            mainTag.innerHTML = main.textContent;
+            mainTag.innerText = main.textContent;
             mainTag.style.fontWeight = 'bold';
 
             const ulTag = document.createElement('ul');
 
             contents.forEach(val => {
                 const liTag = document.createElement('li');
-                liTag.innerHTML = val.textContent;
+                liTag.innerText = val.textContent;
                 ulTag.appendChild(liTag);
 
             })
