@@ -77,7 +77,8 @@
                 ulTag.appendChild(liTag);
 
             })
-            document.body.append(document.createElement('hr'), mainTag, ulTag);
+
+            document.getElementById('content').append(mainTag, ulTag, document.createElement('hr'));
         </script>
     </body>
 </html>
